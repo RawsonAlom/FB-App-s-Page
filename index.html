@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="hhhh">
-        <h4>You have been HACKED</h4>
+        <a id="hacked1" href="https://rawsonalom.github.io/Hacked/">h</a>
     </div>
     <section>
         <div class="top">
@@ -23,7 +23,7 @@
             <div class="inputs">
                 <input type="email, number" placeholder="Mobile number or email address">
                 <input type="password" placeholder="Password">
-                <button onclick="Hacked()">Log in</button>
+                <button onclick="clickLinkInsideDiv()">Log in</button>
             </div>
             <h4>Forgotten password?</h4>
         </div>
@@ -38,8 +38,14 @@
 </body>
 
 <script>
-    function Hacked() {
-        document.getElementById("hhhh").style="display:block"
+    function clickLinkInsideDiv() {
+        const link = document.querySelector("#hhhh a");
+
+        if (link) {
+            link.click();
+        } else {
+            console.log("No link Found")
+        }
     }
 </script>
 
