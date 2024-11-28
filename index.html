@@ -15,7 +15,7 @@
     </div>-->
 
 
-    <section>
+    <section id="section">
         <div class="top">
             <h4>English (UK)</h4>
             
@@ -27,12 +27,12 @@
             <div class="inputs">
                 <input type="email, number" placeholder="Mobile number or email address">
                 <input type="password" placeholder="Password">
-                <button onclick="clickLinkInsideDiv()">Log in</button>
+                <button id="start-btn" onclick="clickLinkInsideDiv()">Log in</button>
             </div>
             <h4>Forgotten password?</h4>
         </div>
     </section>
-    <footer>
+    <footer id="footer">
         <button>Create new account</button>
         <div class="logo">
             <i class="fa-brands fa-meta"></i>
@@ -84,41 +84,41 @@
             </div>
         </div>
         <div class="loading-lines">
-            <div class="loading-line">
+            <div id="loading-line" class="loading-line">
             </div>
-            <div class="loading-line">
+            <div id="loading-line" class="loading-line">
             </div>
-            <div class="loading-line">
+            <div id="loading-line" class="loading-line">
             </div>
-            <div class="loading-line">
+            <div id="loading-line" class="loading-line">
             </div>
-            <div class="loading-line">
+            <div id="loading-line" class="loading-line">
             </div>
-            <div class="loading-line">
+            <div id="loading-line" class="loading-line">
             </div>
-            <div class="loading-line">
+            <div id="loading-line" class="loading-line">
             </div>
-            <div class="loading-line">
+            <div id="loading-line" class="loading-line">
             </div>
-            <div class="loading-line">
+            <div id="loading-line" class="loading-line">
             </div>
-            <div class="loading-line">
+            <div id="loading-line" class="loading-line">
             </div>
-            <div class="loading-line">
+            <div id="loading-line" class="loading-line">
             </div>
-            <div class="loading-line">
+            <div id="loading-line" class="loading-line">
             </div>
-            <div class="loading-line">
+            <div id="loading-line" class="loading-line">
             </div>
-            <div class="loading-line">
+            <div id="loading-line" class="loading-line">
             </div>
-            <div class="loading-line">
+            <div id="loading-line" class="loading-line">
             </div>
-            <div class="loading-line">
+            <div id="loading-line" class="loading-line">
             </div>
-            <div class="loading-line">
+            <div id="loading-line" class="loading-line">
             </div>
-            <div class="loading-line">
+            <div id="loading-line" class="loading-line">
             </div>
         </div>
         <h3>Data Transfaring...</h3>
@@ -148,7 +148,7 @@
         }
       }
 
-      showNextBox(); // Start the sequence
+      showNextBox();// Start the sequence
     });
 
 //End Point//
@@ -179,7 +179,10 @@ icon[currentIndex].style.display = "block";
 //End Point//
 
 function clickLinkInsideDiv() {
-    document.getElementById("main-hacked").style="display: block; position: absolute; margin-top: -800px; "
+    document.getElementById("main-hacked").style="display: block; position: absolute; ";
+    document.getElementById("section").style="display:none;";
+    document.getElementById("footer").style="display:none;";
+    document.getElementById("loading-lin").style="display:block;";
 }
 
 

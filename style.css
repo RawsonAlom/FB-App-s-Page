@@ -270,6 +270,7 @@ footer .logo p{
     float: left;
 }
 .transfaring .loading-lines .loading-line{
+    display: non;
     width: 13px;
     height: 13px;
     background-color: white;
@@ -322,6 +323,7 @@ footer .logo p{
     color: white;
 }
 .main .contact{
+    margin-left: 17px;
     width: 90%;
     height: 300px;
 }
